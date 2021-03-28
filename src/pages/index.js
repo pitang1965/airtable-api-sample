@@ -113,16 +113,16 @@ const IndexPage = () => {
   base('Members directory')
     .select({
       maxRecords: 100,
-      view: 'All members',
+      view: 'Key members',
     })
     .eachPage(
-      function page(records, fetchNextPage) {
-        records.forEach(function (record) {
-          console.log('Retrieved', record.get('Name'));
+      (records, fetchNextPage) => {
+        records.forEach((record) => {
+          console.log('Name: ', record.get('Name'), ' Title: ', record.get('Title'), record.get('Photo'));
         });
         fetchNextPage();
       },
-      function done(err) {
+      (err) => {
         if (err) {
           console.error(err);
           return;
