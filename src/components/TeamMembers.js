@@ -47,7 +47,7 @@ const TeamMembers = () => {
       header: node.data.Name,
       subheader: node.data.Bio,
       social: {
-        homepage: 'https://software.pitang1965.com/',
+        homepage: node.data.Homepage_URL,
         twitter: node.data.Twitter_username,
         github: node.data.GitHub_username,
         instagram: node.data.Instagram_username,
