@@ -43,7 +43,7 @@ AIRTABLE_TABLE_NAME="Members directory"
 
     サイトは http://localhost:8000! で実行されます。
 
-　　まずは [こちら](https://github.com/pitang1965/airtable-api-sample/commit/bb0b23df5acee9cf83e14e5810b535b10cefdc3d)の編集をおこないました。
+　　まずは [こちら](https://github.com/pitang1965/airtable-api-sample/commit/48b726b4291bb90876089d64b9818f0c96be9884)の編集をおこないました。
 
 主な変更は以下です。
 * .env.* ファイルの追加
