@@ -1,6 +1,5 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-// import { getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import TeamMember from './TeamMember';
 
