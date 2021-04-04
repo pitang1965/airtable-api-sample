@@ -11,7 +11,7 @@ const TeamMemberWrapper = styled.div`
 const TeamMember = ({ member }) => {
   return (
     <TeamMemberWrapper>
-      <GatsbyImage image={getImage(member.file)} alt={`TeamMemberWrapper.header`} />
+      <GatsbyImage image={getImage(member.file)} alt={member.header} />
       <h1>{member.header}</h1>
       <p>{member.subheader}</p>
       {member.social.homepage && <p>ホームページ: {member.social.homepage}</p>}
