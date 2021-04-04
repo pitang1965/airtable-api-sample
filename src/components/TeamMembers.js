@@ -51,6 +51,7 @@ const TeamMembers = () => {
         twitter: node.data.Twitter_username,
         github: node.data.GitHub_username,
         instagram: node.data.Instagram_username,
+        youtube: node.data.YouTube_username,
       },
     });
   });

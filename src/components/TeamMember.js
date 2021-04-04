@@ -18,7 +18,7 @@ const TeamMember = ({ member }) => {
       {member.social.twitter && <p>Twitter: {member.social.twitter}</p>}
       {member.social.github && <p>GitHub: {member.social.github}</p>}
       {member.social.instagram && <p>Instagram: {member.social.instagram}</p>}
-      {member.social.youtube && <p>Instagram: {member.social.youtube}</p>}
+      {member.social.youtube && <p>YouTube: {member.social.youtube}</p>}
     </TeamMemberWrapper>
   );
 };
