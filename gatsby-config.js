@@ -7,6 +7,25 @@ module.exports = {
     title: 'Airtable API Sample',
   },
   plugins: [
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY,
+        concurrency: 5,
+        tables: [ // 複数指定可
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: process.env.AIRTABLE_TABLE_NAME,
+            // tableView: `Key members`, // optional
+            // queryName: `OPTIONAL_NAME_TO_IDENTIFY_TABLE`, // optional
+            mapping: { Photo: `fileNode` }, // optional
+            // tableLinks: [`CASE`, `SENSITIVE`, `COLUMN`, `NAMES`], // optional
+            separateNodeType: false, 
+            separateMapType: false,
+          },
+        ]
+      }
+    },
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',
     'gatsby-transformer-remark',
